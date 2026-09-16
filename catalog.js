@@ -1,5 +1,5 @@
 window.MEDIA_CATALOG = {
-  "generatedAt": "2026-09-16T13:05:36.128Z",
+  "generatedAt": "2026-09-16T13:16:46.772Z",
   "items": [
     {
       "id": "f5ce58da8ee5292e",
@@ -22,22 +22,22 @@ window.MEDIA_CATALOG = {
       "height": 1086
     },
     {
-      "id": "ac44f836e2fbe94f",
-      "hash": "ac44f836e2fbe94fcaea717d37bc35436748785686e29f4ffbc5b0acd77f4cb3",
+      "id": "4ffbb0a593245348",
+      "hash": "4ffbb0a593245348a935be927b85ea22d6c52a2494f0aad991868aa39cfd31bb",
       "code": "I16",
       "title": "专辑 · 海绵宝宝 × Nevermind",
       "category": "人物",
       "status": "current",
-      "note": "最终1248×832 Venice真实扩图v2；旧方图、临时画布及v1扩图不展示。",
+      "note": "最终1248×832 Venice干净真实扩图v3；无内层矩形接缝。旧方图、临时画布及v1/v2扩图不展示。",
       "order": 2,
       "owner": "图片任务",
-      "fileName": "03-spongebob-nevermind-true-outpaint-venice-v2.webp",
-      "bytes": 183310,
+      "fileName": "03-spongebob-nevermind-true-outpaint-venice-v3.webp",
+      "bytes": 233318,
       "fileDate": "2026-09-16",
       "kind": "image",
       "collection": "",
-      "src": "media/ac44f836e2fbe94f.webp",
-      "thumb": "thumbs/ac44f836e2fbe94f.jpg",
+      "src": "media/4ffbb0a593245348.webp",
+      "thumb": "thumbs/4ffbb0a593245348.jpg",
       "width": 1248,
       "height": 832
     },
