@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VØRD 素材展厅</title><link rel="stylesheet" href="gallery.css">
+  <script src="catalog.js" defer></script><script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="VORD 素材展厅首页">VØRD<span>素材展厅</span></a>
+    <div class="header-actions"><span class="local-mark"><i></i>精选素材库</span><button class="present-button" id="present"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM12 16v4m-4 0h8"/></svg>投屏放映</button></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><h1>把作品放在一起。</h1><p>已定作品与最新候选，各品类下图片与视频分开展示。</p></div>
+      <div class="inventory-summary"><strong id="count-summary">正在加载素材</strong><span id="update-time"></span></div>
+    </section>
+    <section class="tools" aria-label="筛选素材">
+      <div class="tools-top"><div class="format-tabs" role="group" aria-label="素材类型">
+        <button class="active" data-kind="all" aria-pressed="true">全部作品 <span id="all-count"></span></button>
+        <button data-kind="image" aria-pressed="false">图片 <span id="image-count"></span></button>
+        <button data-kind="video" aria-pressed="false">视频 <span id="video-count"></span></button>
+      </div><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="搜索人物、风景、作品…" aria-label="搜索素材"></label></div>
+      <div class="tools-bottom"><div class="categories" role="group" aria-label="题材">
+        <button class="active" data-category="all" aria-pressed="true">全部题材</button><button data-category="人物" aria-pressed="false">人物</button><button data-category="建筑" aria-pressed="false">建筑 / 小镇</button><button data-category="风景" aria-pressed="false">风景</button><button data-category="室内" aria-pressed="false">室内</button><button data-category="插画" aria-pressed="false">插画 / 漫画</button>
+      </div><label class="status-select"><span>状态</span><select id="status"><option value="all">全部作品</option><option value="current">Landing 现用</option><option value="candidate">待选作品</option><option value="deferred">暂缓方向</option></select></label></div>
+    </section>
+    <div class="results-line"><span id="result-count" role="status"></span><button id="clear" hidden>清除筛选</button><span class="view-help">点击放大 · 左右键切换 · F 全屏</span></div>
+    <div id="gallery"></div>
+    <section id="empty" class="empty" hidden><h2>没有找到这组作品</h2><p>换一个关键词，或查看全部版本。</p><button id="empty-reset">查看全部作品</button></section>
+  </main>
+  <footer><span>VØRD 创作素材库</span><p id="scope"></p><span>精选预览 · 持续更新</span></footer>
+  <dialog id="viewer" aria-label="素材放映">
+    <div class="viewer-top"><span class="viewer-brand">VØRD <span id="viewer-counter"></span></span><div class="viewer-actions"><button id="auto" aria-label="开始自动放映">自动放映</button><button id="info" aria-expanded="false" aria-label="显示素材信息">信息</button><button id="fullscreen" aria-label="切换全屏"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button><button id="close" aria-label="关闭放映"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div></div>
+    <div class="viewer-body"><button id="prev" class="nav-arrow previous" aria-label="上一件作品"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><div id="stage" class="stage"></div><button id="next" class="nav-arrow next" aria-label="下一件作品"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button><aside id="details" class="details" hidden></aside></div>
+    <div class="viewer-bottom"><div><span class="viewer-status" id="viewer-status"></span><h2 id="viewer-title"></h2></div><span class="viewer-hint" id="viewer-hint">← → 切换作品</span></div>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </dialog>
+  <noscript>请启用 JavaScript 以浏览和播放素材。</noscript>
+</body></html>
